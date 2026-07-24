@@ -1,4 +1,4 @@
-# LLVM-Based Expression Evaluator
+# LLVMCalc
 
 This project is a simple expression evaluator implemented using LLVM. It processes mathematical expressions and generates corresponding LLVM Intermediate Representation (IR) code.
 
@@ -66,3 +66,19 @@ To run the calculator, execute:
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+## Status
+
+Utility prototype. No external runtime dependencies beyond LLVM and the standard C++ libraries.
+
+## Build
+
+```bash
+clang++ -g calculator.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core orcjit native` -O3 -o calculator
+```
+
+## Run
+
+```bash
+./calculator
+```

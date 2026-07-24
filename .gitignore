@@ -1,0 +1,18 @@
+# Build artifacts
+calculator
+*.o
+*.obj
+*.so
+*.a
+*.exe
+
+# LLVM/clang temporary files
+*.bc
+*.ll
+
+# IDE / OS artifacts
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
