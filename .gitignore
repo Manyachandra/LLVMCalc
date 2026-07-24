@@ -15,6 +15,7 @@ calculator
 .env
 .env.local
 .env.*.local
+dist
 
 # Dependencies / environment
 node_modules/
